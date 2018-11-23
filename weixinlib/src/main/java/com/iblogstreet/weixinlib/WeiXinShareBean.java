@@ -36,15 +36,15 @@ public class WeiXinShareBean {
         return mTargetScene;
     }
 
-    public void setmTargetScene(int mTargetScene) {
+    public WeiXinShareBean setmTargetScene(int mTargetScene) {
         this.mTargetScene = mTargetScene;
+        return this;
     }
 
     private int mTargetScene = SendMessageToWX.Req.WXSceneSession;
 
-    public WeiXinShareBean WeiXinShareBean(Context context, String appId) {
+    public WeiXinShareBean(Context context, String appId) {
         this.mApi = WXAPIFactory.createWXAPI(context, appId);
-        return this;
     }
 
     /**
