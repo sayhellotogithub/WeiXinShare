@@ -3,7 +3,6 @@ package com.iblogstreet.weixinlib;
 import android.content.Context;
 import android.graphics.Bitmap;
 
-import com.iblogstreet.weixinlib.constant.Constants;
 import com.iblogstreet.weixinlib.constant.Util;
 import com.tencent.mm.opensdk.modelmsg.SendMessageToWX;
 import com.tencent.mm.opensdk.modelmsg.WXAppExtendObject;
@@ -43,8 +42,8 @@ public class WeiXinShareBean {
 
     private int mTargetScene = SendMessageToWX.Req.WXSceneSession;
 
-    public WeiXinShareBean WeiXinShareBean(Context context) {
-        this.mApi = WXAPIFactory.createWXAPI(context, Constants.APP_ID);
+    public WeiXinShareBean WeiXinShareBean(Context context, String appId) {
+        this.mApi = WXAPIFactory.createWXAPI(context, appId);
         return this;
     }
 

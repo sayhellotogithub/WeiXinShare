@@ -19,5 +19,6 @@ android {
 }
 
 dependencies {
-    api project (':weixinlib')
+    api project(':weixinlib')
+    // implementation 'com.github.sayhellotogithub:WeiXinShare:v1.0.0'
 }
